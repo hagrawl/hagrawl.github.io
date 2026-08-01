@@ -38,7 +38,7 @@ Previously, I worked as an Engineer at ARM Ltd., managing core blocks across ARM
   *Core member of the Non-Coherent Interconnect and Last Level Cache Design team, designing optimized NIC and NoC topologies.*
 - **Engineer** – ARM Ltd. (Nov 2022 – Feb 2026)  
   *Engineered core blocks across ARM Non-Coherent Interconnects and validated AXI4/5, CHI-E, and APB protocols.*
-- **Design Engineer** – AMD / Foray Software (Jun 2022 – Oct 2022)  
+- **Design Engineer** – AMD (Jun 2022 – Oct 2022)  
   *Developed hardware-accelerated kernels using Vitis HLS and OpenCL for AMD Alveo and Versal devices.*
 - **Software Engineer Intern** – AMD / Xilinx India (Oct 2021 – May 2022)  
   *Engineered FPGA-accelerated hardware IPs within the Vitis HLS and AMD Vivado environments.*

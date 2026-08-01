@@ -29,7 +29,6 @@ cv:
         studyType: B.Tech
         start_date: 2018
         end_date: 2022
-        score: "8.15 / 10.0"
 
     Experience:
       - company: NXP Semiconductors Pvt. Ltd.
