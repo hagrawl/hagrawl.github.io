@@ -6,638 +6,494 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Harsh Agrawal – Senior Lead Design Engineer</title>
-  <meta name="description" content="Personal Website of Harsh Agrawal – Senior Lead Design Engineer specializing in Non-Coherent Interconnects, Last Level Cache Design, and RTL Hardware Micro-architecture.">
+  <meta name="description" content="Personal Website of Harsh Agrawal – Senior Lead Design Engineer & Incoming MSc Student in Microelectronics System Design at University of Southampton.">
 
-  <!-- Google Fonts & FontAwesome -->
+  <!-- Google Fonts: Raleway & Fira Sans matching agarwl.github.io -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
   <style>
-    :root {
-      --primary-color: #1a365d;
-      --accent-color: #2b6cb0;
-      --text-main: #2d3748;
-      --text-muted: #718096;
-      --bg-main: #ffffff;
-      --bg-secondary: #f7fafc;
-      --border-color: #e2e8f0;
-      --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-      --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-      --font-code: 'Fira Code', monospace;
-    }
-
+    /* Exact style reset & typography from agarwl.github.io */
     * { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
 
     body {
-      font-family: var(--font-body);
-      color: var(--text-main);
-      background-color: var(--bg-main);
-      line-height: 1.6;
+      font-family: 'Fira Sans', Helvetica, Arial, sans-serif;
       font-size: 16px;
+      font-weight: 300;
+      line-height: 1.6;
+      color: #111111;
+      background-color: #ffffff;
+      -webkit-text-size-adjust: 100%;
     }
 
-    .container {
-      max-width: 1000px;
+    a {
+      color: #2a7ae2;
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+    a:visited { color: #1756a9; }
+    a:hover { color: #6da4eb; text-decoration: underline; }
+
+    .wrapper {
+      max-width: 800px;
       margin: 0 auto;
-      padding: 0 20px;
+      padding: 0 25px;
     }
 
-    /* Navbar Header */
+    /* Site Header matching agarwl.github.io */
     header.site-header {
-      border-bottom: 1px solid var(--border-color);
-      position: sticky;
-      top: 0;
-      background: rgba(255, 255, 255, 0.95);
-      backdrop-filter: blur(8px);
-      z-index: 100;
+      margin-top: 30px;
+      margin-bottom: 40px;
+      text-align: center;
     }
 
-    .nav-wrapper {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 16px 0;
+    .site-title {
+      font-family: 'Raleway', sans-serif;
+      font-size: 42px;
+      font-weight: 400;
+      letter-spacing: -1px;
+      margin-bottom: 12px;
     }
 
     .site-title a {
-      font-size: 1.35rem;
-      font-weight: 700;
-      color: var(--primary-color);
+      color: #111111;
       text-decoration: none;
-      letter-spacing: -0.02em;
+    }
+    .site-title a:hover {
+      color: #555555;
+      text-decoration: none;
     }
 
-    nav.desktop-menu ul {
-      display: flex;
+    .desktop-menu ul {
       list-style: none;
-      gap: 24px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 18px;
+      margin-top: 10px;
     }
 
-    nav.desktop-menu a {
+    .desktop-menu ul li a {
+      color: #333333;
+      font-size: 15px;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .desktop-menu ul li a:hover {
+      color: #2a7ae2;
       text-decoration: none;
-      color: var(--text-muted);
-      font-weight: 500;
-      font-size: 0.95rem;
-      transition: color 0.2s ease;
     }
 
-    nav.desktop-menu a:hover {
-      color: var(--accent-color);
-    }
-
-    /* Hero Layout (agarwl.github.io inspired 2-column grid) */
-    .hero-section {
-      padding: 40px 0 30px 0;
-    }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 2.2fr 1fr;
-      gap: 40px;
+    /* 2-Column Hero Row matching agarwl.github.io */
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -15px;
       align-items: start;
     }
 
+    .six-columns-text {
+      flex: 0 0 65%;
+      max-width: 65%;
+      padding: 0 15px;
+    }
+
+    .six-columns-img {
+      flex: 0 0 35%;
+      max-width: 35%;
+      padding: 0 15px;
+      text-align: center;
+    }
+
     @media (max-width: 768px) {
-      .hero-grid {
-        grid-template-columns: 1fr;
+      .six-columns-text, .six-columns-img {
+        flex: 0 0 100%;
+        max-width: 100%;
       }
-      .profile-col {
+      .six-columns-img {
+        margin-top: 20px;
         order: -1;
-        text-align: center;
       }
     }
 
-    .bio-col h1 {
-      font-size: 2rem;
-      font-weight: 700;
-      color: var(--primary-color);
-      margin-bottom: 6px;
-    }
-
-    .role-badge {
-      display: inline-block;
-      background-color: #ebf8ff;
-      color: #2b6cb0;
-      font-weight: 600;
-      font-size: 0.88rem;
-      padding: 4px 12px;
-      border-radius: 20px;
-      margin-bottom: 16px;
-      border: 1px solid #bee3f8;
-    }
-
-    .social-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-bottom: 20px;
-    }
-
-    .social-tag {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      padding: 6px 12px;
-      background-color: var(--bg-secondary);
-      border: 1px solid var(--border-color);
-      border-radius: 6px;
-      color: var(--text-main);
-      text-decoration: none;
-      font-size: 0.85rem;
-      font-weight: 500;
-      transition: all 0.2s ease;
-    }
-
-    .social-tag:hover {
-      border-color: var(--accent-color);
-      color: var(--accent-color);
-      transform: translateY(-1px);
-    }
-
-    .bio-text {
-      font-size: 1.02rem;
-      color: #334155;
-    }
-
-    .bio-text p {
-      margin-bottom: 16px;
-    }
-
-    .profile-col img {
+    .six-columns-img img {
       width: 100%;
-      max-width: 260px;
-      border-radius: 12px;
-      box-shadow: var(--card-shadow);
-      border: 3px solid var(--bg-main);
-      display: block;
-      margin: 0 auto;
+      max-width: 220px;
+      border-radius: 4px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+      border: 1px solid #e8e8e8;
     }
 
-    /* Section Styling */
-    section {
-      padding: 36px 0;
-      border-top: 1px solid var(--border-color);
+    p { margin-bottom: 16px; font-weight: 300; }
+    strong, b { font-weight: 500; }
+
+    .divider {
+      height: 1px;
+      background-color: #e8e8e8;
+      margin: 35px 0;
     }
 
-    .section-title {
-      font-size: 1.4rem;
-      font-weight: 700;
-      color: var(--primary-color);
+    .page-heading {
+      font-family: 'Raleway', sans-serif;
+      font-size: 24px;
+      font-weight: 400;
+      color: #111111;
+      margin-bottom: 20px;
+      letter-spacing: -0.5px;
+    }
+
+    /* Experience & Education Item Blocks */
+    .item-block {
       margin-bottom: 24px;
-      position: relative;
-      display: flex;
-      align-items: center;
-      gap: 10px;
     }
 
-    /* Experience Timeline Cards */
-    .experience-list {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-
-    .experience-card {
-      background: var(--bg-main);
-      border: 1px solid var(--border-color);
-      border-radius: 8px;
-      padding: 20px;
-      transition: box-shadow 0.2s ease, border-color 0.2s ease;
-    }
-
-    .experience-card:hover {
-      box-shadow: var(--card-shadow);
-      border-color: var(--accent-color);
-    }
-
-    .card-header {
+    .item-header {
       display: flex;
       justify-content: space-between;
       align-items: baseline;
       flex-wrap: wrap;
-      margin-bottom: 8px;
+      margin-bottom: 4px;
     }
 
-    .job-title {
-      font-size: 1.1rem;
-      font-weight: 700;
-      color: var(--primary-color);
-    }
-
-    .company-name {
-      font-weight: 600;
-      color: var(--accent-color);
-    }
-
-    .date-badge {
-      font-size: 0.85rem;
-      font-weight: 600;
-      color: var(--text-muted);
-      background-color: var(--bg-secondary);
-      padding: 4px 10px;
-      border-radius: 4px;
-    }
-
-    .exp-bullets {
-      list-style-type: disc;
-      margin-left: 20px;
-      color: #4a5568;
-      font-size: 0.95rem;
-    }
-
-    .exp-bullets li {
-      margin-bottom: 6px;
-    }
-
-    /* Project Grid */
-    .project-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
-    }
-
-    .project-card {
-      background: var(--bg-secondary);
-      border: 1px solid var(--border-color);
-      border-radius: 8px;
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-
-    .project-card h3 {
-      font-size: 1.08rem;
-      color: var(--primary-color);
-      margin-bottom: 8px;
-    }
-
-    .project-card p {
-      font-size: 0.9rem;
-      color: var(--text-muted);
-      margin-bottom: 14px;
-    }
-
-    .tech-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-      margin-bottom: 12px;
-    }
-
-    .tech-tag {
-      font-size: 0.75rem;
-      font-family: var(--font-code);
-      background-color: #e2e8f0;
-      color: #2d3748;
-      padding: 2px 8px;
-      border-radius: 4px;
-    }
-
-    .project-link {
-      font-size: 0.85rem;
-      font-weight: 600;
-      color: var(--accent-color);
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
-    }
-
-    .project-link:hover { text-decoration: underline; }
-
-    /* Skills Badges */
-    .skills-category {
-      margin-bottom: 16px;
-    }
-
-    .skills-category h4 {
-      font-size: 0.95rem;
-      font-weight: 600;
-      color: var(--primary-color);
-      margin-bottom: 8px;
-    }
-
-    .badge-wrap {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-
-    .skill-badge {
-      background-color: #edf2f7;
-      color: #2d3748;
-      font-size: 0.85rem;
+    .item-date {
       font-weight: 500;
-      padding: 5px 12px;
-      border-radius: 6px;
-      border: 1px solid #cbd5e0;
+      color: #2a7ae2;
+      min-width: 130px;
+      font-size: 14px;
     }
 
-    /* Footer */
-    footer {
-      padding: 30px 0;
-      border-top: 1px solid var(--border-color);
+    .item-title {
+      font-weight: 500;
+      color: #111111;
+      font-size: 16px;
+    }
+
+    .item-bullets {
+      margin-left: 20px;
+      margin-top: 6px;
+    }
+
+    .item-bullets li {
+      margin-bottom: 4px;
+      font-size: 15px;
+      font-weight: 300;
+    }
+
+    /* Contact Links Center Bar */
+    .quick-links {
       text-align: center;
-      font-size: 0.9rem;
-      color: var(--text-muted);
+      margin-bottom: 30px;
+      font-size: 15px;
+    }
+    .quick-links a {
+      margin: 0 8px;
     }
 
-    footer a { color: var(--accent-color); text-decoration: none; }
+    /* Project items (agarwl.github.io style) */
+    .project-item {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 24px;
+      align-items: center;
+    }
+
+    @media (max-width: 600px) {
+      .project-item { flex-direction: column; align-items: flex-start; }
+    }
+
+    .project-thumb {
+      flex: 0 0 140px;
+      max-width: 140px;
+    }
+    .project-thumb img {
+      width: 100%;
+      border-radius: 4px;
+      border: 1px solid #e8e8e8;
+    }
+
+    .project-info h3 {
+      font-size: 17px;
+      font-weight: 500;
+      color: #111111;
+      margin-bottom: 4px;
+      text-align: left;
+    }
+
+    .project-info p {
+      font-size: 14px;
+      margin-bottom: 6px;
+      color: #444444;
+    }
+
+    .tag-link {
+      font-size: 13px;
+      display: inline-block;
+      margin-right: 10px;
+      font-weight: 400;
+    }
+
+    /* Skills list */
+    .skills-list {
+      list-style: none;
+      margin-left: 0;
+    }
+    .skills-list li {
+      margin-bottom: 8px;
+      font-size: 15px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 0;
+      font-size: 14px;
+      color: #777777;
+    }
   </style>
 </head>
 <body>
 
-  <!-- Site Navigation -->
   <header class="site-header">
-    <div class="container nav-wrapper">
-      <div class="site-title">
-        <a href="#">Harsh Agrawal</a>
-      </div>
+    <div class="wrapper">
+      <div class="site-title"><a href="/">Harsh Agrawal</a></div>
       <nav class="desktop-menu">
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
+          <li><a href="#leadership">Leadership</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#skills">Skills</a></li>
-          <li><a href="#awards">Awards</a></li>
-          <li><a href="#education">Education</a></li>
+          <li><a href="#education">Education &amp; Honors</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main class="container">
+  <main class="wrapper">
 
-    <!-- Hero Section (agarwl.github.io layout) -->
-    <div class="hero-section" id="about">
-      <div class="hero-grid">
-        <div class="bio-col">
-          <h1>Harsh Agrawal</h1>
-          <div class="role-badge"><i class="fa-solid fa-microchip"></i> Senior Lead Design Engineer @ NXP Semiconductors</div>
+    <!-- About Section (agarwl.github.io 2-column layout) -->
+    <div id="about" style="padding-top: 10px;">
+      <div class="quick-links">
+        <a href="mailto:harshagrawal1181@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a> &bull;
+        <a href="https://www.linkedin.com/in/harshagr-vlsi/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a> &bull;
+        <a href="https://github.com/harshagr-22" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a> &bull;
+        <span><i class="fa-solid fa-location-dot"></i> Bangalore, India</span>
+      </div>
 
-          <div class="social-links">
-            <a href="mailto:harshagrawal1181@gmail.com" class="social-tag"><i class="fa-solid fa-envelope"></i> Email</a>
-            <a href="https://www.linkedin.com/in/harshagr-vlsi/" target="_blank" class="social-tag"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
-            <a href="https://github.com/harshagr-22" target="_blank" class="social-tag"><i class="fa-brands fa-github"></i> GitHub</a>
-            <span class="social-tag"><i class="fa-solid fa-location-dot"></i> Bangalore, India</span>
-          </div>
-
-          <div class="bio-text">
-            <p>
-              I am a <strong>Senior Lead Design Engineer</strong> at <strong>NXP Semiconductors</strong> in Bangalore, specializing in <strong>Non-Coherent Interconnect (NIC) &amp; Last Level Cache (LLC) Design</strong>.
-            </p>
-            <p>
-              Previously, I spent over 3 years as an Engineer at <strong>ARM Ltd.</strong> working on Non-Coherent Interconnect micro-architecture, digital IP wrappers, and SoC integration across <strong>AXI4/5, CHI-E, APB, and UART</strong> protocols. Before ARM, I developed hardware-accelerated FPGA kernels at <strong>AMD (Xilinx)</strong> targeting Alveo devices (U200, U250) and Versal adaptive SoCs using Vitis HLS and OpenCL.
-            </p>
-            <p>
-              I completed my B.Tech in Electronics &amp; Communication Engineering with a major in <strong>VLSI</strong> from Lovely Professional University.
-            </p>
-          </div>
+      <div class="row">
+        <div class="six-columns-text">
+          <p>
+            I am a <strong>Senior Lead Design Engineer</strong> at <a href="https://www.nxp.com/" target="_blank">NXP Semiconductors</a> in Bangalore, specializing in <strong>Non-Coherent Interconnect &amp; Last Level Cache Design</strong>. Starting <strong>Fall 2026</strong>, I will be joining the <a href="https://www.southampton.ac.uk/" target="_blank">University of Southampton</a> to pursue my <strong>MSc in Microelectronics System Design</strong>.
+          </p>
+          <p>
+            Previously, I spent over three years as an Engineer at <a href="https://www.arm.com/" target="_blank">ARM Ltd.</a>, managing core blocks across multiple ARM Non-Coherent Interconnects and driving digital IP integration with communication protocols including <strong>AXI4/5, CHI-E, and APB</strong>. Earlier, I worked on software-programmable hardware acceleration at <a href="https://www.amd.com/" target="_blank">AMD (Xilinx)</a>, developing high-throughput FPGA kernels using Vitis HLS and OpenCL for Alveo accelerator cards.
+          </p>
+          <p>
+            <strong>Research &amp; Exploration:</strong> I am actively interested in advanced research topics across <strong>FPGAs, Domain-Specific Hardware Accelerators, Parallel Micro-architectures, and GPU/Heterogeneous Systems</strong>.
+          </p>
         </div>
 
-        <div class="profile-col">
-          <img src="assets/img/prof_pic.jpg" alt="Harsh Agrawal Profile Picture">
+        <div class="six-columns-img">
+          <img src="assets/img/prof_pic.jpg" alt="Harsh Agrawal">
         </div>
       </div>
     </div>
 
-    <!-- Experience Section -->
-    <section id="experience">
-      <h2 class="section-title"><i class="fa-solid fa-briefcase"></i> Professional Experience</h2>
-      <div class="experience-list">
+    <div class="divider"></div>
 
-        <!-- NXP Semiconductors -->
-        <div class="experience-card">
-          <div class="card-header">
-            <div>
-              <span class="job-title">Senior Lead Design Engineer</span> – <span class="company-name">NXP Semiconductors Pvt. Ltd.</span>
-            </div>
-            <span class="date-badge">Mar 2026 – Present | Bangalore</span>
-          </div>
-          <ul class="exp-bullets">
-            <li>Core engineering member of Non-Coherent Interconnect (NIC) &amp; Last Level Cache (LLC) Design team.</li>
-            <li>Collaborate with system architects and integration teams to drive end-to-end IP micro-architecture and integration.</li>
-            <li>Design and optimize high-efficiency NIC and NoC topologies to maximize subsystem throughput and minimize memory latency.</li>
-          </ul>
+    <!-- Professional Experience Section -->
+    <div id="experience">
+      <h2 class="page-heading">Professional Experience</h2>
+
+      <div class="item-block">
+        <div class="item-header">
+          <span class="item-title">SENIOR LEAD DESIGN ENGINEER – NXP Semiconductors Pvt. Ltd.</span>
+          <span class="item-date">Mar’26 – Present</span>
         </div>
-
-        <!-- ARM Ltd. -->
-        <div class="experience-card">
-          <div class="card-header">
-            <div>
-              <span class="job-title">Engineer</span> – <span class="company-name">ARM Ltd.</span>
-            </div>
-            <span class="date-badge">Nov 2022 – Feb 2026 | Bangalore</span>
-          </div>
-          <ul class="exp-bullets">
-            <li>Engineered core blocks across multiple ARM Non-Coherent Interconnect products.</li>
-            <li>Specialized in RTL design, micro-architecture definition, IP wrappers, and top-level SoC integration.</li>
-            <li>Hands-on expertise in communication protocols: <strong>AXI4/AXI5, CHI-E, APB, UART</strong>.</li>
-            <li>Executed static lint analysis and functional simulation verification using <strong>QuestaSim, VCS, and Visualizer</strong>.</li>
-            <li>Honored with the <strong>Pat on the Back Award</strong> (Nov 2023) for outstanding engineering dedication and impactful delivery.</li>
-          </ul>
-        </div>
-
-        <!-- AMD -->
-        <div class="experience-card">
-          <div class="card-header">
-            <div>
-              <span class="job-title">Design Engineer</span> – <span class="company-name">AMD (Foray Software Pvt. Ltd.)</span>
-            </div>
-            <span class="date-badge">Jun 2022 – Oct 2022 | Hyderabad</span>
-          </div>
-          <ul class="exp-bullets">
-            <li>Collaborated with Software Programmable Acceleration team to build high-performance hardware kernels.</li>
-            <li>Developed accelerated IPs using Vitis HLS and Vitis Unified Software Platform for <strong>AMD Alveo (U200, U250)</strong> and <strong>Versal (VCK190)</strong> cards.</li>
-            <li>Offloaded compute-intensive data tasks from host CPUs to enterprise FPGAs using OpenCL runtime.</li>
-          </ul>
-        </div>
-
-        <!-- AMD / Xilinx Intern -->
-        <div class="experience-card">
-          <div class="card-header">
-            <div>
-              <span class="job-title">Software Engineer Intern</span> – <span class="company-name">AMD (Xilinx India Technology Service Pvt. Ltd.)</span>
-            </div>
-            <span class="date-badge">Oct 2021 – May 2022 | Hyderabad</span>
-          </div>
-          <ul class="exp-bullets">
-            <li>Engineered accelerated hardware IPs for FPGAs within the Vitis HLS and Vivado environments.</li>
-            <li>Benchmarked acceleration performance metrics across Xilinx Alveo enterprise hardware accelerators.</li>
-          </ul>
-        </div>
-
+        <ul class="item-bullets">
+          <li>Core member of the Non-Coherent Interconnect &amp; Last Level Cache Design team in Bangalore.</li>
+          <li>Partner with system architects and integration teams to drive end-to-end IP micro-architecture and integration.</li>
+          <li>Design and implement optimized NIC and NoC topologies to maximize subsystem efficiency and throughput.</li>
+        </ul>
       </div>
-    </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-      <h2 class="section-title"><i class="fa-solid fa-diagram-project"></i> RTL Hardware Projects</h2>
-      <div class="project-grid">
-
-        <!-- Project 1 -->
-        <div class="project-card">
-          <div>
-            <h3>Output-Stationary Pipelined Systolic GEMM Accelerator</h3>
-            <p>Parametrized PE array architecture with stage-0 input capture, stage-1 multiply-accumulate, Ping-Pong matrix buffer, and streaming output collector.</p>
-            <div class="tech-tags">
-              <span class="tech-tag">Verilog</span>
-              <span class="tech-tag">Vivado</span>
-              <span class="tech-tag">GEMM</span>
-              <span class="tech-tag">Systolic Array</span>
-            </div>
-          </div>
-          <span class="project-link"><i class="fa-solid fa-microchip"></i> Hardware Synthesized</span>
+      <div class="item-block">
+        <div class="item-header">
+          <span class="item-title">ENGINEER – ARM Ltd.</span>
+          <span class="item-date">Nov’22 – Feb’26</span>
         </div>
-
-        <!-- Project 2 -->
-        <div class="project-card">
-          <div>
-            <h3>ARM Interconnect &amp; IP Integration</h3>
-            <p>Micro-architecture management, synthesizable wrappers, and testbenches for ARM Non-Coherent Interconnects supporting AXI4/5 and CHI-E.</p>
-            <div class="tech-tags">
-              <span class="tech-tag">SystemVerilog</span>
-              <span class="tech-tag">AXI4/5</span>
-              <span class="tech-tag">CHI-E</span>
-              <span class="tech-tag">QuestaSim</span>
-            </div>
-          </div>
-          <span class="project-link"><i class="fa-solid fa-layer-group"></i> SoC Integration</span>
-        </div>
-
-        <!-- Project 3 -->
-        <div class="project-card">
-          <div>
-            <h3>UART Communication Protocol</h3>
-            <p>Configurable Hardware UART Receiver/Transmitter protocol in Verilog with baud rate generation and parity error detection.</p>
-            <div class="tech-tags">
-              <span class="tech-tag">Verilog</span>
-              <span class="tech-tag">RTL</span>
-              <span class="tech-tag">UART</span>
-              <span class="tech-tag">FPGA</span>
-            </div>
-          </div>
-          <a href="https://github.com/harshagr-22/UART" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> View Repository &rarr;</a>
-        </div>
-
-        <!-- Project 4 -->
-        <div class="project-card">
-          <div>
-            <h3>Pipelined Arithmetic Logic Unit (ALU)</h3>
-            <p>Synthesizable 4-bit Pipelined ALU supporting arithmetic, logical, and shift operations with FPGA hardware validation.</p>
-            <div class="tech-tags">
-              <span class="tech-tag">Verilog</span>
-              <span class="tech-tag">Pipelining</span>
-              <span class="tech-tag">ALU</span>
-              <span class="tech-tag">Xilinx ISE</span>
-            </div>
-          </div>
-          <a href="https://github.com/harshagr-22/alu" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> View Repository &rarr;</a>
-        </div>
-
+        <ul class="item-bullets">
+          <li>Worked within the Interconnect and SoC Design team, managing key blocks across multiple ARM Non-Coherent Interconnects.</li>
+          <li>Engineered synthesizable RTL wrappers for digital IPs and created validation testbenches.</li>
+          <li>Hands-on expertise with communication protocols: AXI4/5, CHI-E, APB, and UART.</li>
+          <li>Executed static lint analysis and functional simulations using Mentor QuestaSim, Synopsys VCS, and Visualizer.</li>
+        </ul>
       </div>
-    </section>
 
-    <!-- Technical Skills Section -->
-    <section id="skills">
-      <h2 class="section-title"><i class="fa-solid fa-gears"></i> Technical Expertise</h2>
-      
-      <div class="skills-category">
-        <h4>Hardware Design &amp; Verification</h4>
-        <div class="badge-wrap">
-          <span class="skill-badge">Verilog</span>
-          <span class="skill-badge">SystemVerilog</span>
-          <span class="skill-badge">RTL Micro-architecture</span>
-          <span class="skill-badge">Static Timing Analysis (STA)</span>
-          <span class="skill-badge">Linting</span>
-          <span class="skill-badge">8085 Microprocessor</span>
-          <span class="skill-badge">CMOS Technology</span>
+      <div class="item-block">
+        <div class="item-header">
+          <span class="item-title">DESIGN ENGINEER – AMD (Foray Software Pvt. Ltd.)</span>
+          <span class="item-date">June’22 – Oct’22</span>
+        </div>
+        <ul class="item-bullets">
+          <li>Collaborated with the Software Programmable Acceleration team to design high-performance hardware kernels.</li>
+          <li>Developed accelerated IPs using Vitis HLS and Vitis Unified Software Platform for AMD Alveo (U200, U250) and Versal (VCK190) devices.</li>
+          <li>Utilized OpenCL to offload compute-bound workloads from host CPUs to FPGA accelerators.</li>
+        </ul>
+      </div>
+
+      <div class="item-block">
+        <div class="item-header">
+          <span class="item-title">SOFTWARE ENGINEER INTERN – AMD (Xilinx India Technology Service)</span>
+          <span class="item-date">Oct’21 – May’22</span>
+        </div>
+        <ul class="item-bullets">
+          <li>Engineered FPGA-accelerated IPs in the Vitis Unified Software Platform, Vitis HLS tools, and AMD Vivado.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Leadership & Community Initiatives Section -->
+    <div id="leadership">
+      <h2 class="page-heading">Leadership &amp; Community Initiatives</h2>
+
+      <div class="item-block">
+        <div class="item-header">
+          <span class="item-title">CHIEF EXECUTIVE OFFICER (CEO) – Renovation Tech Robotics and Aeromodelling (RTRA)</span>
+          <span class="item-date">Feb’20 – Apr’21</span>
+        </div>
+        <ul class="item-bullets">
+          <li>Served as student leader for RTRA, Lovely Professional University's premier robotics and aeromodelling student organization.</li>
+          <li>Organized international competitions and technical webinars, guiding and enabling 100+ students to participate in national techfests across India.</li>
+        </ul>
+      </div>
+
+      <div class="item-block">
+        <div class="item-header">
+          <span class="item-title">CAMPUS AMBASSADOR – Techfest, IIT Bombay</span>
+          <span class="item-date">Aug’19 – Jan’20</span>
+        </div>
+        <ul class="item-bullets">
+          <li>Represented Techfest, Asia’s largest annual science and technological festival organized by IIT Bombay.</li>
+          <li>Promoted technical challenges, workshops, and competitions, driving a 30% increase in total student participation over preceding years.</li>
+        </ul>
+      </div>
+
+      <div class="item-block">
+        <div class="item-header">
+          <span class="item-title">TECHNICAL HEAD &amp; TEAM LEAD – Ignus’2k19, IIT Jodhpur</span>
+          <span class="item-date">Jan’19 – Feb’19</span>
+        </div>
+        <ul class="item-bullets">
+          <li>Led the hardware team in circuit engineering for robotics and electronics challenges at IIT Jodhpur's annual techfest.</li>
+          <li>Achieved <strong>1st Position in Electronics Challenge</strong> and <strong>3rd Position in Robotics Challenge</strong>.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- RTL Design & Hardware Projects -->
+    <div id="projects">
+      <h2 class="page-heading">RTL &amp; Hardware Projects</h2>
+
+      <div class="project-item">
+        <div class="project-thumb">
+          <img src="assets/img/Project1.png" alt="GEMM Accelerator">
+        </div>
+        <div class="project-info">
+          <h3>Output-Stationary Pipelined Systolic GEMM Accelerator</h3>
+          <p>Parametrized pipelined Processing Element (PE) architecture with Stage-0 input capture and Stage-1 multiply-accumulate. Features a dataflow sampling controller, Ping-Pong matrix buffer, and streaming output collector. Synthesized and validated on AMD Vivado.</p>
+          <span class="tag-link"><i class="fa-solid fa-microchip"></i> Verilog / Vivado</span>
         </div>
       </div>
 
-      <div class="skills-category">
-        <h4>Interconnects &amp; Protocols</h4>
-        <div class="badge-wrap">
-          <span class="skill-badge">Non-Coherent Interconnect (NIC)</span>
-          <span class="skill-badge">Network-on-Chip (NoC)</span>
-          <span class="skill-badge">Last Level Cache (LLC)</span>
-          <span class="skill-badge">AXI4 / AXI5</span>
-          <span class="skill-badge">CHI-E Protocol</span>
-          <span class="skill-badge">APB</span>
-          <span class="skill-badge">UART</span>
+      <div class="project-item">
+        <div class="project-thumb">
+          <img src="assets/img/Project3.png" alt="ALU Project">
+        </div>
+        <div class="project-info">
+          <h3>4-bit Pipelined Arithmetic Logic Unit (ALU)</h3>
+          <p>Micro-architectural design of a 4-bit ALU supporting arithmetic, logical, and shift operations. Developed synthesizable Verilog RTL with operation decoding, validated on FPGA hardware.</p>
+          <a href="https://github.com/harshagr-22/alu" target="_blank" class="tag-link"><i class="fa-brands fa-github"></i> Repository &rarr;</a>
         </div>
       </div>
 
-      <div class="skills-category">
-        <h4>Architecture &amp; Hardware Acceleration</h4>
-        <div class="badge-wrap">
-          <span class="skill-badge">Pipelining</span>
-          <span class="skill-badge">Systolic Arrays (GEMM)</span>
-          <span class="skill-badge">Matrix Multiply Engines</span>
-          <span class="skill-badge">FPGA Acceleration</span>
-          <span class="skill-badge">AMD Alveo U200/U250</span>
-          <span class="skill-badge">OpenCL</span>
+      <div class="project-item">
+        <div class="project-thumb">
+          <img src="assets/img/Project2.png" alt="UART Project">
         </div>
+        <div class="project-info">
+          <h3>Verilog UART Communication Protocol</h3>
+          <p>Synthesizable hardware implementation of Universal Asynchronous Receiver-Transmitter protocol with configurable baud rate generation and parity error detection.</p>
+          <a href="https://github.com/harshagr-22/UART" target="_blank" class="tag-link"><i class="fa-brands fa-github"></i> Repository &rarr;</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Skills Section -->
+    <div id="skills">
+      <h2 class="page-heading">Technical Skills</h2>
+      <ul class="skills-list">
+        <li><strong>Hardware Design &amp; Verification:</strong> Verilog, SystemVerilog, RTL Micro-architecture, Linting, Static Timing Analysis (STA), 8085 Microprocessor, CMOS Technology.</li>
+        <li><strong>Interconnects &amp; Protocols:</strong> Non-Coherent Interconnects (NIC), NoC, Last Level Caches (LLC), AXI4/AXI5, CHI-E, APB, UART.</li>
+        <li><strong>Computer Architecture &amp; Acceleration:</strong> Caches, Atomics, Pipelining, Systolic Arrays (GEMM), SIMD/SIMT, FPGAs, AMD Alveo (U200/U250), OpenCL.</li>
+        <li><strong>EDA Tools &amp; Languages:</strong> Xilinx Vivado, Vitis HLS, Mentor QuestaSim, Synopsys VCS, Visualizer, Sentaurus TCAD, Python, C++, Linux.</li>
+      </ul>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Education & Honors Section -->
+    <div id="education">
+      <h2 class="page-heading">Education &amp; Honors</h2>
+
+      <div class="item-block">
+        <div class="item-header">
+          <span class="item-title">MSc in Microelectronics System Design – University of Southampton</span>
+          <span class="item-date">Incoming Fall 2026</span>
+        </div>
+        <p style="font-size: 15px; font-weight: 300;">Advanced study focusing on micro-architecture, advanced SoC design, and domain-specific hardware accelerators.</p>
       </div>
 
-      <div class="skills-category">
-        <h4>EDA Tools &amp; Languages</h4>
-        <div class="badge-wrap">
-          <span class="skill-badge">Xilinx Vivado</span>
-          <span class="skill-badge">Vitis HLS</span>
-          <span class="skill-badge">Mentor QuestaSim</span>
-          <span class="skill-badge">Synopsys VCS</span>
-          <span class="skill-badge">Visualizer</span>
-          <span class="skill-badge">Synopsys Sentaurus TCAD</span>
-          <span class="skill-badge">Python</span>
-          <span class="skill-badge">C++</span>
-          <span class="skill-badge">Linux</span>
+      <div class="item-block">
+        <div class="item-header">
+          <span class="item-title">B.Tech in Electronics and Communication Engineering (Major: VLSI) – LPU</span>
+          <span class="item-date">2018 – 2022</span>
         </div>
+        <p style="font-size: 15px; font-weight: 300;">Lovely Professional University, Jalandhar &bull; CGPA: 8.15 / 10.0</p>
       </div>
-    </section>
 
-    <!-- Awards Section -->
-    <section id="awards">
-      <h2 class="section-title"><i class="fa-solid fa-award"></i> Honors &amp; Awards</h2>
-      <div class="experience-card">
-        <div class="card-header">
-          <div>
-            <span class="job-title">Pat on the Back Award</span> – <span class="company-name">ARM India</span>
-          </div>
-          <span class="date-badge">Nov 2023</span>
+      <div class="item-block" style="margin-top: 20px;">
+        <div class="item-header">
+          <span class="item-title">Pat on the Back Award – ARM India</span>
+          <span class="item-date">Nov 2023</span>
         </div>
-        <p style="color: #4a5568; font-size: 0.95rem;">
-          Received recognition for unwavering dedication, focus on results, and engineering excellence during my first year at ARM Ltd.
-        </p>
+        <p style="font-size: 15px; font-weight: 300;">Awarded for unwavering dedication, focus on results, and engineering excellence during my first year at ARM Ltd.</p>
       </div>
-    </section>
 
-    <!-- Education Section -->
-    <section id="education">
-      <h2 class="section-title"><i class="fa-solid fa-graduation-cap"></i> Education</h2>
-      <div class="experience-card">
-        <div class="card-header">
-          <div>
-            <span class="job-title">B.Tech in Electronics and Communication Engineering</span> (Major: VLSI)
-          </div>
-          <span class="date-badge">2018 – 2022</span>
+      <div class="item-block">
+        <div class="item-header">
+          <span class="item-title">1st Position (Electronics) &amp; 3rd Position (Robotics) – Ignus’2k19, IIT Jodhpur</span>
+          <span class="item-date">Feb 2019</span>
         </div>
-        <p style="font-weight: 600; color: var(--accent-color);">Lovely Professional University, Jalandhar</p>
-        <p style="color: #4a5568; font-size: 0.92rem; margin-top: 4px;">CGPA: 8.15 / 10.0</p>
+        <p style="font-size: 15px; font-weight: 300;">Bagged 1st position in Electronics Challenge and 3rd position in Robotics Challenge as Technical Head &amp; Circuit Designer.</p>
       </div>
-    </section>
+    </div>
 
   </main>
 
   <footer>
-    <div class="container">
-      <p>&copy; Harsh Agrawal. All rights reserved.</p>
-      <p style="margin-top: 6px;">Connected via <a href="https://www.linkedin.com/in/harshagr-vlsi/" target="_blank">LinkedIn</a> | <a href="https://github.com/harshagr-22" target="_blank">GitHub</a> | <a href="mailto:harshagrawal1181@gmail.com">harshagrawal1181@gmail.com</a></p>
+    <div class="wrapper">
+      <p>&copy; Harsh Agrawal. Hosted on GitHub Pages.</p>
     </div>
   </footer>
 
