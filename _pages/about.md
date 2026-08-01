@@ -1,34 +1,55 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Senior Lead Design Engineer @ NXP Semiconductors | Ex-ARM, Ex-AMD
 
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: false
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Bangalore, India</p>
+    <p><a href="mailto:harshagrawal1181@gmail.com">harshagrawal1181@gmail.com</a></p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+selected_papers: false
+social: true
 
 announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  enabled: false
 
 latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  enabled: false
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am a **Senior Lead Design Engineer** at **NXP Semiconductors** in Bangalore, specializing in **Non-Coherent Interconnect (NIC) & Last Level Cache (LLC) Design**. 
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/publications/) automatically.
+Previously, I was an Engineer at **ARM**, where I worked on interconnect micro-architecture, RTL design, and SoC IP integration across ARM Non-Coherent Interconnects and communication protocols (**AXI4/5, CHI-E, APB, UART**). Before ARM, I worked on software-programmable FPGA acceleration at **AMD (Xilinx)**, developing hardware acceleration kernels for AMD Alveo cards (U200/U250) and Versal adaptive SoCs using Vitis HLS and OpenCL.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+I completed my B.Tech in Electronics & Communication Engineering with a major in **VLSI** from Lovely Professional University.
+
+---
+
+### Research & Engineering Focus
+
+My primary engineering expertise encompasses:
+- **Interconnect & Cache Micro-Architecture:** Designing scalable Non-Coherent Interconnect (NIC), Network-on-Chip (NoC) topologies, and Last Level Caches (LLC).
+- **High-Performance RTL Design:** Synthesizable Verilog / SystemVerilog RTL modeling, custom wrappers, and SoC integration.
+- **Hardware Acceleration:** Pipelined Systolic GEMM Arrays, FPGA acceleration (AMD/Xilinx Alveo), and High-Level Synthesis (Vitis HLS).
+- **Protocols & EDA Verification:** AXI4/5, CHI-E, APB, UART, Static Timing Analysis (STA), Lint, QuestaSim, VCS, and Vivado.
+
+---
+
+### Featured Hardware Projects
+
+- **[Output-Stationary Pipelined Systolic GEMM Accelerator](/projects/1_systolic_gemm/)**  
+  *Parametrized PE architecture, dataflow controller, Ping-Pong buffer, and streaming output collector synthesized on AMD Vivado.*
+
+- **[ARM Non-Coherent Interconnect & IP Integration](/projects/2_arm_interconnect/)**  
+  *RTL micro-architecture and block management for ARM Non-Coherent Interconnects supporting AXI4/5, CHI-E, and APB protocols.*
+
+- **[UART Communication Protocol](/projects/3_uart/)**  
+  *Hardware implementation of Universal Asynchronous Receiver-Transmitter protocol in Verilog.*
+
+- **[Pipelined Arithmetic Logic Unit (ALU)](/projects/4_alu/)**  
+  *Synthesizable 4-bit ALU supporting arithmetic, logical, and shift operations validated on FPGA.*

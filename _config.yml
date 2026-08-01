@@ -2,19 +2,18 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
+title: Harsh Agrawal
 first_name: Harsh
-middle_name: R.
+middle_name: ""
 last_name: Agrawal
 contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
-description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+  Senior Lead Design Engineer @ NXP Semiconductors | Ex-ARM, Ex-AMD
+description: >
+  Personal Website & Portfolio of Harsh Agrawal – Senior Lead Design Engineer specializing in Non-Coherent Interconnects, Last Level Cache Design, and RTL Hardware Micro-architecture.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
+keywords: vlsi, hardware-design, rtl, verilog, systemverilog, interconnect, nxp, arm, amd, fpga, microarchitecture
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
