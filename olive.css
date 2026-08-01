@@ -1,0 +1,39 @@
+#wrapper{
+	width:900px;
+}
+
+#corner{
+	width:270px;
+	float:left;
+}
+
+#nav{
+	width:270px;
+	text-align:right;
+}
+
+#maincontent{
+	width:630px;
+	float:left;
+}
+
+img{
+	border-style:solid;
+	border-color: #5E0501;
+	border-width:10px;
+}
+
+h1,h2,h3,h4{
+	font-variant:small-caps;
+	font-family: Trebuchet, Arial, sans-serif;
+	color: #5E0501;
+}
+
+#text h4{
+	margin-bottom:-8px;
+}
+
+#header{
+	padding: 0px 0px 10px 30px;
+	width:630px;
+}
