@@ -1,10 +1,10 @@
 cv:
   name: Harsh Agrawal
-  label: Senior Lead Design Engineer
+  label: Senior Lead Design Engineer | Incoming MSc Student
   email: harshagrawal1181@gmail.com
   location: Bangalore, India
   image: "assets/img/prof_pic.jpg"
-  summary: Senior Lead Design Engineer at NXP Semiconductors specializing in Non-Coherent Interconnect, Last Level Cache Design, and RTL Hardware Micro-architecture across ARM, AMD, and NXP.
+  summary: Senior Lead Design Engineer at NXP Semiconductors specializing in Non-Coherent Interconnect & Last Level Cache Design. Incoming MSc student in Microelectronics System Design at the University of Southampton (Fall 2026). Open to research collaborations in FPGAs, Hardware Accelerators, and Parallel Computing.
 
   social_networks:
     - network: LinkedIn
@@ -14,6 +14,15 @@ cv:
 
   sections:
     Education:
+      - institution: University of Southampton
+        location: Southampton, UK
+        area: Microelectronics System Design
+        studyType: MSc
+        start_date: 2026 (Fall)
+        end_date: 2027
+        highlights:
+          - "Focusing on advanced micro-architecture, domain-specific hardware accelerators, and VLSI system integration."
+
       - institution: Lovely Professional University
         location: Jalandhar, India
         area: Electronics and Communication Engineering (Major in VLSI)
@@ -66,37 +75,46 @@ cv:
         summary: Software Programmable Acceleration team intern.
         highlights:
           - "Engineered accelerated FPGA IPs using Vitis Unified Software Platform, Vitis HLS, and Vivado."
-          - "Benchmarked performance acceleration on Xilinx Alveo enterprise hardware cards."
 
-    Projects:
-      - title: Output-Stationary Pipelined Systolic GEMM Accelerator
-        date: 2025-08-01
-        summary: Pipelined Processing Element (PE) architecture, Dataflow Controller, Ping-Pong stream buffer, and streaming output collector. Synthesized and validated on AMD Vivado.
+    Leadership & Community:
+      - company: Renovation Tech Robotics and Aeromodelling (RTRA)
+        position: Chief Executive Officer (CEO) / Student Leader
+        location: LPU, Jalandhar
+        start_date: 2020-02-01
+        end_date: 2021-04-30
+        summary: Led LPU's flagship robotics & aeromodelling student organization.
+        highlights:
+          - "Organized global technical competitions and webinars."
+          - "Guided and enabled 100+ students to participate in national techfests across India."
 
-      - title: Verilog Implementation of UART Communication Protocol
-        date: 2021-08-01
-        summary: Fully configurable Hardware UART Receiver/Transmitter protocol in Verilog with baud rate generation and parity error detection.
+      - company: Techfest, IIT Bombay
+        position: Campus Ambassador
+        location: IIT Bombay
+        start_date: 2019-08-01
+        end_date: 2020-01-31
+        summary: Represented Asia's largest science and technology festival.
+        highlights:
+          - "Promoted technical challenges, workshops, and competitions."
+          - "Drove a 30% increase in total student participation over preceding years."
 
-      - title: FSM Sequence Detector
-        date: 2021-06-01
-        summary: Synthesizable Finite State Machine design in Verilog for overlap and non-overlap sequence pattern detection.
-
-      - title: 4-bit Pipelined Arithmetic Logic Unit (ALU)
-        date: 2021-05-01
-        summary: Micro-architectural design and FPGA validation of a 4-bit ALU supporting arithmetic, logical, and shift operations.
+      - company: Ignus’2k19, IIT Jodhpur
+        position: Technical Head & Team Leader
+        location: IIT Jodhpur
+        start_date: 2019-01-01
+        end_date: 2019-02-28
+        summary: Technical head for robotics & electronics challenge team.
+        highlights:
+          - "Bagged 1st Position in Electronics Challenge."
+          - "Bagged 3rd Position in Robotics Challenge."
 
     Awards:
       - title: Pat on the Back Award
         date: 2023-11-01
         organization: ARM India
         summary: Awarded for dedication, technical excellence, and impactful contributions during the first year at ARM.
-
-    Skills:
-      - name: Hardware Design & Verification
-        keywords: ["Verilog", "SystemVerilog", "RTL Microarchitecture", "Lint", "Static Timing Analysis (STA)", "8085 Microprocessor", "CMOS Technology"]
-      - name: Interconnects & Protocols
-        keywords: ["Non-Coherent Interconnects (NIC)", "NoC", "Last Level Caches (LLC)", "AXI4/5", "CHI-E", "APB", "UART"]
-      - name: Hardware Acceleration & Architecture
-        keywords: ["Pipelining", "Systolic Arrays (GEMM)", "Atomics", "FPGA Acceleration", "OpenCL", "Alveo U200/U250"]
-      - name: EDA Tools & Scripting
-        keywords: ["Xilinx Vivado", "Vitis HLS", "Mentor QuestaSim", "Synopsys VCS", "Visualizer", "Sentaurus TCAD", "Python", "C++", "Linux"]
+      - title: 1st Position - Electronics Challenge
+        date: 2019-02-01
+        organization: Ignus’2k19, IIT Jodhpur
+      - title: 3rd Position - Robotics Challenge
+        date: 2019-02-01
+        organization: Ignus’2k19, IIT Jodhpur
