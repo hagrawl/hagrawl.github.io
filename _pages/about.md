@@ -28,7 +28,7 @@ latest_posts:
 
 I am a Senior Lead Design Engineer at NXP Semiconductors in Bangalore, focusing on Non-Coherent Interconnect and Last Level Cache Design. Starting Fall 2026, I will be attending the University of Southampton to pursue an MSc in Microelectronics System Design.
 
-Previously, I worked as an Engineer at ARM Ltd., managing core blocks across ARM Non-Coherent Interconnects and digital IP integration with communication protocols including AXI4/5, CHI-E, and APB. Earlier, I developed software-programmable hardware accelerators at AMD (Xilinx) using Vitis HLS and OpenCL for Alveo accelerator cards. I completed my B.Tech in Electronics and Communication Engineering (Major in VLSI) at Lovely Professional University.
+Previously, I worked as an Engineer at ARM Ltd., managing core blocks across ARM Non-Coherent Interconnects and digital IP integration with communication protocols including AXI4/5, CHI-E, and APB. Earlier, I developed software-programmable hardware accelerators at AMD (Xilinx) using Vitis HLS and OpenCL for Alveo accelerator cards. I completed my B.Tech in Electronics and Communication Engineering.
 
 ---
 
