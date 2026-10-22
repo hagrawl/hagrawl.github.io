@@ -1,10 +1,10 @@
 cv:
   name: Harsh Agrawal
-  label: Senior Lead Design Engineer | Incoming MSc Student
+  label: MSc Student in Microelectronics System Design | Ex-NXP, Ex-ARM, Ex-AMD
   email: harshagrawal1181@gmail.com
-  location: Bangalore, India
+  location: Southampton, UK
   image: "assets/img/prof_pic.jpg"
-  summary: Senior Lead Design Engineer at NXP Semiconductors specializing in Non-Coherent Interconnect & Last Level Cache Design. Incoming MSc student in Microelectronics System Design at the University of Southampton (Fall 2026). Open to research collaborations in FPGAs, Hardware Accelerators, and Parallel Computing.
+  summary: MSc student in Microelectronics System Design at the University of Southampton, specializing in Reconfigurable Computing and Computer Architecture. Former Senior Lead Design Engineer at NXP Semiconductors specializing in Non-Coherent Interconnect & Last Level Cache Design. Open to research collaborations in FPGAs, Hardware Accelerators, and Parallel Computing.
 
   social_networks:
     - network: LinkedIn
@@ -18,10 +18,11 @@ cv:
         location: Southampton, UK
         area: Microelectronics System Design
         studyType: MSc
-        start_date: 2026 (Fall)
-        end_date: 2027
+        start_date: Sept 2026
+        end_date: Present
         highlights:
-          - "Focusing on advanced micro-architecture, domain-specific hardware accelerators, and VLSI system integration."
+          - "Specialization in Reconfigurable Computing and Computer Architecture."
+          - "Advanced study in micro-architecture, FPGA design, SoC systems, and domain-specific hardware accelerators."
 
       - institution: Lovely Professional University
         location: Jalandhar, India
@@ -35,7 +36,7 @@ cv:
         position: Senior Lead Design Engineer
         location: Bangalore, India
         start_date: 2026-03-01
-        end_date: Present
+        end_date: 2026-08-31
         summary: Core member of Non-Coherent Interconnect & Last Level Cache Design team.
         highlights:
           - "Specializing in Non-Coherent Interconnect (NIC) & Last Level Cache (LLC) micro-architecture."

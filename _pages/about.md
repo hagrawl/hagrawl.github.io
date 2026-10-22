@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Senior Lead Design Engineer @ NXP | Incoming MSc Student @ Southampton
+subtitle: MSc Student @ Southampton | Ex-Senior Lead Design Engineer @ NXP
 
 profile:
   align: right
@@ -23,10 +23,10 @@ latest_posts:
 ---
 
 <div class="research-banner" style="background-color: #f4f8fe; border: 1px solid #d0e1fd; border-radius: 4px; padding: 12px 18px; margin-bottom: 25px; font-size: 14.5px; color: #1a498b; text-align: center;">
-  Open for research collaborations in FPGAs, Domain-Specific Hardware Accelerators, GPUs, and Parallel Architectures.
+  Actively looking for research collaborations in FPGAs, Domain-Specific Hardware Accelerators, GPUs, and Parallel Architectures.
 </div>
 
-I am a Senior Lead Design Engineer at NXP Semiconductors in Bangalore, focusing on Non-Coherent Interconnect and Last Level Cache Design. Starting Fall 2026, I will be attending the University of Southampton to pursue an MSc in Microelectronics System Design.
+I am currently pursuing an MSc in Computer Architecture at the University of Southampton. Previously, I worked as a Senior Lead Design Engineer at NXP Semiconductors in Bangalore, focusing on Non-Coherent Interconnect and Last Level Cache Design.
 
 Previously, I worked as an Engineer at ARM Ltd., managing core blocks across ARM Non-Coherent Interconnects and digital IP integration with communication protocols including AXI4/5, CHI-E, and APB. Earlier, I developed software-programmable hardware accelerators at AMD (Xilinx) using Vitis HLS and OpenCL for Alveo accelerator cards. I completed my B.Tech in Electronics and Communication Engineering.
 
@@ -34,7 +34,7 @@ Previously, I worked as an Engineer at ARM Ltd., managing core blocks across ARM
 
 ### Professional Experience
 
-- **Senior Lead Design Engineer** – NXP Semiconductors (Mar 2026 – Present)  
+- **Senior Lead Design Engineer** – NXP Semiconductors (Mar 2026 – Sep 2026)  
   *Core member of the Non-Coherent Interconnect and Last Level Cache Design team, designing optimized NIC and NoC topologies.*
 - **Engineer** – ARM Ltd. (Nov 2022 – Feb 2026)  
   *Engineered core blocks across ARM Non-Coherent Interconnects and validated AXI4/5, CHI-E, and APB protocols.*
