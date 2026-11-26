@@ -206,6 +206,62 @@
       margin: 0 8px;
     }
 
+    /* Previously-At Company Strip */
+    .prev-at {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 20px;
+      font-size: 13.5px;
+      color: #888888;
+    }
+    .prev-at-line {
+      flex: 1;
+      max-width: 80px;
+      height: 1px;
+      background: linear-gradient(to right, transparent, #d0d0d0);
+    }
+    .prev-at-line:last-child {
+      background: linear-gradient(to left, transparent, #d0d0d0);
+    }
+    .prev-at-dot {
+      color: #cccccc;
+      font-size: 18px;
+      line-height: 1;
+      vertical-align: middle;
+    }
+    .prev-at .company-badge {
+      display: inline-block;
+      padding: 5px 16px;
+      margin: 2px 0;
+      border: 1px solid #e0e0e0;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 400;
+      color: #444444;
+      background-color: #fafafa;
+      transition: all 0.2s ease;
+      white-space: nowrap;
+    }
+    .prev-at .company-badge i {
+      margin-right: 5px;
+      font-size: 11px;
+      color: #999999;
+    }
+    .prev-at .company-badge:hover {
+      border-color: #2a7ae2;
+      color: #2a7ae2;
+      background-color: #f0f6ff;
+    }
+    .prev-at .company-badge:hover i {
+      color: #2a7ae2;
+    }
+    @media (max-width: 768px) {
+      .prev-at-line { display: none; }
+    }
+
     /* Text-Only Project items */
     .project-text-item {
       margin-bottom: 22px;
@@ -265,6 +321,16 @@
       <!-- Highlighted Top Banner for Research & Collaboration -->
       <div class="research-banner">
         <i class="fa-solid fa-flask"></i> Open for research collaborations in FPGAs, Domain-Specific Hardware Accelerators, GPUs, and Parallel Architectures.
+      </div>
+
+      <div class="prev-at">
+        <span class="prev-at-line"></span>
+        <span class="company-badge"><i class="fa-solid fa-building"></i> NXP Semiconductors</span>
+        <span class="prev-at-dot">·</span>
+        <span class="company-badge"><i class="fa-solid fa-microchip"></i> ARM</span>
+        <span class="prev-at-dot">·</span>
+        <span class="company-badge"><i class="fa-solid fa-microchip"></i> AMD (Xilinx)</span>
+        <span class="prev-at-line"></span>
       </div>
 
       <div class="quick-links">
