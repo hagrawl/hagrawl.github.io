@@ -56,7 +56,7 @@ cv:
           - "Conducted extensive static analysis (Lint) and functional simulations using QuestaSim, VCS, and Visualizer."
           - "Received the prestigious 'Pat on the Back Award' (Nov 2023) for outstanding engineering impact."
 
-      - company: AMD (Foray Software Pvt. Ltd.)
+      - company: AMD
         position: Design Engineer
         location: Hyderabad, India
         start_date: 2022-06-01
@@ -67,7 +67,7 @@ cv:
           - "Targeted AMD Alveo accelerator devices (U200, U250) and Versal adaptive SoCs (VCK190)."
           - "Utilized OpenCL host runtime to manage high-throughput data offloading from host CPU to FPGA."
 
-      - company: AMD (Xilinx India Technology Service Pvt. Ltd.)
+      - company: Xilinx India Technology Service Pvt. Ltd.
         position: Software Engineer Intern
         location: Hyderabad, India
         start_date: 2021-10-01
